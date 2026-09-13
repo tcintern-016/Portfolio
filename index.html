@@ -10,24 +10,31 @@
 </head>
 <body>
     <nav>
-         <div class="logo-image">
-            <img src="mylogo.jfif" alt="Illustration of a developer coding">
-        </div>
-        <input type="checkbox" id="menuToggle" class="menu-checkbox">
-        <label for="menuToggle" class="menu-toggle" aria-label="Open menu">&#9776;</label>
-        <div class="nav-links">
-            <p><a href="#about">About me</a></p>
-            <p><a href="#skills">My Skills</a></p>
-            <p><a href="#projects">My Projects</a></p>
-            <p><a href="#contact">Contact me</a></p>
+        <div class="nav-inner">
+            <div class="logo-image">
+                <img src="mylogo.jfif" alt="Fatima logo">
+            </div>
+            <input type="checkbox" id="menuToggle" class="menu-checkbox">
+            <label for="menuToggle" class="menu-toggle" aria-label="Open menu">&#9776;</label>
+            <div class="nav-links">
+                <p><a href="#about">About me</a></p>
+                <p><a href="#skills">My Skills</a></p>
+                <p><a href="#projects">My Projects</a></p>
+                <p><a href="#internship">Internship Projects</a></p>
+                <p><a href="#contact">Contact me</a></p>
+            </div>
         </div>
     </nav>
 
     <header>
         <div class="header-text">
             <p id="name">Hi! My name is Fatima Ameen</p>
-            <p id="skill">I am a Full-Stack Developer  &amp; AI Enthusiast</p>
+            <p id="skill">I am a Full-Stack Developer &amp; AI Enthusiast</p>
             <p id="detail">I build fast, responsive web apps and cross-platform mobile apps, and I love integrating AI into real-world projects using tools like LangChain and RAG pipelines.</p>
+            <div class="header-links">
+                <a href="https://github.com/tcintern-016" target="_blank" rel="noopener" class="btn-outline">GitHub</a>
+                <a href="resume.pdf" target="_blank" rel="noopener" class="btn-filled">Download Resume</a>
+            </div>
         </div>
         <div class="header-img">
             <img src="Coder.png" alt="Illustration of a developer coding">
@@ -59,6 +66,8 @@
                 <div class="skil"><p>Laravel</p></div>
                 <div class="skil"><p>MySQL</p></div>
                 <div class="skil"><p>Git</p></div>
+                <div class="skil"><p>LangChain</p></div>
+                <div class="skil"><p>FastAPI</p></div>
             </div>
         </section>
 
@@ -74,7 +83,7 @@
                     </div>
                 </article>
 
-                              <article class="project-card">
+                <article class="project-card">
                     <h3>StyleSync</h3>
                     <p>A fashion e-commerce website built with PHP and MySQL, featuring product browsing, cart management, and a clean checkout flow.</p>
                     <div class="tags">
@@ -91,13 +100,76 @@
                         <span>JDBC</span>
                     </div>
                 </article>
+            </div>
+        </section>
 
-                <article class="project-card">
+        <section class="Internship-projects" id="internship">
+            <p class="section-title">Internship Projects</p>
+            <p class="section-subtitle">RAG, LangChain, and LangGraph projects built during my AI Engineering internship.</p>
+            <div class="project-grid">
+                <article class="project-card featured">
                     <h3>HIKMAH AI</h3>
-                    <p>A question-answering system built with LangChain and a RAG pipeline, using a local Ollama model for private, offline responses.</p>
+                    <p>A RAG-based question-answering system over Quran and Hadith text, built with LangChain, ChromaDB, and Groq, with a FastAPI backend and Streamlit frontend.</p>
                     <div class="tags">
                         <span>LangChain</span>
                         <span>RAG</span>
+                        <span>ChromaDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/tcintern-016/Hikmah-AI" target="_blank" rel="noopener">GitHub Repo</a>
+                        <a href="https://hikmah-ai-p6oz5xlbnb3ckjsf3ftpsk.streamlit.app" target="_blank" rel="noopener">Live Demo</a>
+                    </div>
+                </article>
+
+                <article class="project-card featured">
+                    <h3>Mizan AI — Pakistan Law Assistant</h3>
+                    <p>A RAG assistant answering questions from Pakistani legal documents (Constitution, Penal Code, Contract Act, PECA), with source citations and a legal disclaimer, built with LangChain and Groq.</p>
+                    <div class="tags">
+                        <span>LangChain</span>
+                        <span>RAG</span>
+                        <span>FastAPI</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener">GitHub Repo</a>
+                        <a href="https://mizan-ai-2bdzb4nvzeabh2wgez5gtd.streamlit.app/" target="_blank" rel="noopener">Live Demo</a>
+                    </div>
+                </article>
+
+                <article class="project-card featured">
+                    <h3>Content Strategist</h3>
+                    <p>A LangGraph agent that researches a business and generates a grounded content strategy — target audience, content pillars, and recommended platforms.</p>
+                    <div class="tags">
+                        <span>LangGraph</span>
+                        <span>Agents</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener">GitHub Repo</a>
+                        <a href="https://content-strategist-7cn6keutfg3z7vxcadwvgw.streamlit.app/" target="_blank" rel="noopener">Live Demo</a>
+                    </div>
+                </article>
+
+                <article class="project-card featured">
+                    <h3>ContentCompass</h3>
+                    <p>A LangGraph multi-agent app that turns a business description into a full content strategy and ready-to-post social media content, through a research → strategy → posts pipeline.</p>
+                    <div class="tags">
+                        <span>LangGraph</span>
+                        <span>Multi-Agent</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener">GitHub Repo</a>
+                        <a href="https://contentcompass-ae9kp3zydpunlgktkq4aui.streamlit.app/" target="_blank" rel="noopener">Live Demo</a>
+                    </div>
+                </article>
+
+                <article class="project-card featured">
+                    <h3>AI Job Application Guardian</h3>
+                    <p>A LangGraph agent pipeline that verifies job posting legitimacy, extracts requirements, and tailors a resume/cover letter using RAG over a master resume, with human approval before sending.</p>
+                    <div class="tags">
+                        <span>LangGraph</span>
+                        <span>RAG</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener">GitHub Repo</a>
                     </div>
                 </article>
             </div>
@@ -109,6 +181,7 @@
                 <div class="information">
                     <p>Phone no: 0233-4533221</p>
                     <p>Email: fatima@gmail.com</p>
+                    <p><a href="https://github.com/tcintern-016" target="_blank" rel="noopener">GitHub: github.com/tcintern-016</a></p>
                 </div>
 
                 <form class="contact-form">
