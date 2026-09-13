@@ -3,185 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fatima's Portfolio</title>
+    <title>Fatima Ameen — Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <nav>
-        <div class="nav-inner">
+        <div class="container nav-inner">
             <div class="logo-image">
                 <img src="mylogo.jfif" alt="Fatima logo">
             </div>
             <input type="checkbox" id="menuToggle" class="menu-checkbox">
             <label for="menuToggle" class="menu-toggle" aria-label="Open menu">&#9776;</label>
             <div class="nav-links">
-                <p><a href="#about">About me</a></p>
-                <p><a href="#skills">My Skills</a></p>
-                <p><a href="#projects">My Projects</a></p>
-                <p><a href="#internship">Internship Projects</a></p>
-                <p><a href="#contact">Contact me</a></p>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#internship">Internship</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
     </nav>
 
     <header>
-        <div class="header-text">
-            <p id="name">Hi! My name is Fatima Ameen</p>
-            <p id="skill">I am a Full-Stack Developer &amp; AI Enthusiast</p>
-            <p id="detail">I build fast, responsive web apps and cross-platform mobile apps, and I love integrating AI into real-world projects using tools like LangChain and RAG pipelines.</p>
-            <div class="header-links">
-                <a href="https://github.com/tcintern-016" target="_blank" rel="noopener" class="btn-outline">GitHub</a>
-                <a href="resume.pdf" target="_blank" rel="noopener" class="btn-filled">Download Resume</a>
+        <div class="container header-inner">
+            <div class="header-text">
+                <p class="eyebrow">Hi, my name is</p>
+                <h1 id="name">Fatima Ameen</h1>
+                <p id="skill">Full-Stack Developer &amp; AI Enthusiast</p>
+                <p id="detail">I build fast, responsive web apps and cross-platform mobile apps, and I love integrating AI into real-world projects using tools like LangChain and RAG pipelines.</p>
+                <div class="header-links">
+                    <a href="https://github.com/tcintern-016" target="_blank" rel="noopener" class="btn-outline">GitHub</a>
+                    <a href="resume.pdf" target="_blank" rel="noopener" class="btn-filled">Download Resume</a>
+                </div>
             </div>
-        </div>
-        <div class="header-img">
-            <img src="Coder.png" alt="Illustration of a developer coding">
+            <div class="header-img">
+                <img src="Coder.png" alt="Illustration of a developer coding">
+            </div>
         </div>
     </header>
 
     <main>
-        <section class="About-me" id="about">
-            <p id="title">About me</p>
-            <p id="info">
-                I'm a BS Computer Science student at COMSATS University Islamabad, Sahiwal Campus, currently in my fifth semester.
-                I'm building a strong foundation in programming, data structures, and software engineering.
-                I focus on understanding core concepts instead of just passing exams.
-                I actively develop practical skills in web development, mobile app development, and AI integration.
-                I continuously improve my problem-solving and technical abilities through real projects.
-            </p>
-        </section>
-
-        <section class="Skills" id="skills">
-            <p class="section-title">My Skills</p>
-            <div class="skills-wrap">
-                <div class="skil"><p>HTML</p></div>
-                <div class="skil"><p>CSS</p></div>
-                <div class="skil"><p>JS</p></div>
-                <div class="skil"><p>React</p></div>
-                <div class="skil"><p>Flutter</p></div>
-                <div class="skil"><p>Firebase</p></div>
-                <div class="skil"><p>PHP</p></div>
-                <div class="skil"><p>Laravel</p></div>
-                <div class="skil"><p>MySQL</p></div>
-                <div class="skil"><p>Git</p></div>
-                <div class="skil"><p>LangChain</p></div>
-                <div class="skil"><p>FastAPI</p></div>
+        <section id="about">
+            <div class="container">
+                <p class="section-title">About Me</p>
+                <p class="section-body">
+                    I'm a BS Computer Science student at COMSATS University Islamabad, Sahiwal Campus, currently in my fifth semester.
+                    I'm building a strong foundation in programming, data structures, and software engineering.
+                    I focus on understanding core concepts instead of just passing exams.
+                    I actively develop practical skills in web development, mobile app development, and AI integration.
+                    I continuously improve my problem-solving and technical abilities through real projects.
+                </p>
             </div>
         </section>
 
-        <section class="Projects" id="projects">
-            <p class="section-title">My Projects</p>
-            <div class="project-grid">
-                <article class="project-card">
-                    <h3>HabitForge</h3>
-                    <p>A Flutter &amp; Firebase Android app for tracking daily habits, with streaks, push notifications, and progress charts.</p>
-                    <div class="tags">
-                        <span>Flutter</span>
-                        <span>Firebase</span>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <h3>StyleSync</h3>
-                    <p>A fashion e-commerce website built with PHP and MySQL, featuring product browsing, cart management, and a clean checkout flow.</p>
-                    <div class="tags">
-                        <span>PHP</span>
-                        <span>MySQL</span>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <h3>Palace Booking Management System</h3>
-                    <p>A Java Swing desktop app for managing venue bookings, clients, and reports, connected to a MySQL database via JDBC.</p>
-                    <div class="tags">
-                        <span>Java</span>
-                        <span>JDBC</span>
-                    </div>
-                </article>
+        <section id="skills" class="alt-bg">
+            <div class="container">
+                <p class="section-title">My Skills</p>
+                <div class="skills-grid">
+                    <div class="skil">HTML</div>
+                    <div class="skil">CSS</div>
+                    <div class="skil">JS</div>
+                    <div class="skil">React</div>
+                    <div class="skil">Flutter</div>
+                    <div class="skil">Firebase</div>
+                    <div class="skil">PHP</div>
+                    <div class="skil">Laravel</div>
+                    <div class="skil">MySQL</div>
+                    <div class="skil">Git</div>
+                    <div class="skil">LangChain</div>
+                    <div class="skil">FastAPI</div>
+                </div>
             </div>
         </section>
 
-        <section class="Internship-projects" id="internship">
-            <p class="section-title">Internship Projects</p>
-            <p class="section-subtitle">RAG, LangChain, and LangGraph projects built during my AI Engineering internship.</p>
-            <div class="project-grid">
-                <article class="project-card featured">
-                    <h3>HIKMAH AI</h3>
-                    <p>A RAG-based question-answering system over Quran and Hadith text, built with LangChain, ChromaDB, and Groq, with a FastAPI backend and Streamlit frontend.</p>
-                    <div class="tags">
-                        <span>LangChain</span>
-                        <span>RAG</span>
-                        <span>ChromaDB</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/tcintern-016/Hikmah-AI" target="_blank" rel="noopener">GitHub Repo</a>
-                        <a href="https://hikmah-ai-p6oz5xlbnb3ckjsf3ftpsk.streamlit.app" target="_blank" rel="noopener">Live Demo</a>
-                    </div>
-                </article>
+        <section id="projects">
+            <div class="container">
+                <p class="section-title">My Projects</p>
+                <div class="card-grid">
+                    <article class="project-card">
+                        <h3>HabitForge</h3>
+                        <p>A Flutter &amp; Firebase Android app for tracking daily habits, with streaks, push notifications, and progress charts.</p>
+                        <div class="tags">
+                            <span>Flutter</span>
+                            <span>Firebase</span>
+                        </div>
+                    </article>
 
-                <article class="project-card featured">
-                    <h3>Mizan AI — Pakistan Law Assistant</h3>
-                    <p>A RAG assistant answering questions from Pakistani legal documents (Constitution, Penal Code, Contract Act, PECA), with source citations and a legal disclaimer, built with LangChain and Groq.</p>
-                    <div class="tags">
-                        <span>LangChain</span>
-                        <span>RAG</span>
-                        <span>FastAPI</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" target="_blank" rel="noopener">GitHub Repo</a>
-                        <a href="https://mizan-ai-2bdzb4nvzeabh2wgez5gtd.streamlit.app/" target="_blank" rel="noopener">Live Demo</a>
-                    </div>
-                </article>
+                    <article class="project-card">
+                        <h3>StyleSync</h3>
+                        <p>A fashion e-commerce website built with PHP and MySQL, featuring product browsing, cart management, and a clean checkout flow.</p>
+                        <div class="tags">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                        </div>
+                    </article>
 
-                <article class="project-card featured">
-                    <h3>Content Strategist</h3>
-                    <p>A LangGraph agent that researches a business and generates a grounded content strategy — target audience, content pillars, and recommended platforms.</p>
-                    <div class="tags">
-                        <span>LangGraph</span>
-                        <span>Agents</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" target="_blank" rel="noopener">GitHub Repo</a>
-                        <a href="https://content-strategist-7cn6keutfg3z7vxcadwvgw.streamlit.app/" target="_blank" rel="noopener">Live Demo</a>
-                    </div>
-                </article>
-
-                <article class="project-card featured">
-                    <h3>ContentCompass</h3>
-                    <p>A LangGraph multi-agent app that turns a business description into a full content strategy and ready-to-post social media content, through a research → strategy → posts pipeline.</p>
-                    <div class="tags">
-                        <span>LangGraph</span>
-                        <span>Multi-Agent</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" target="_blank" rel="noopener">GitHub Repo</a>
-                        <a href="https://contentcompass-ae9kp3zydpunlgktkq4aui.streamlit.app/" target="_blank" rel="noopener">Live Demo</a>
-                    </div>
-                </article>
-
-                <article class="project-card featured">
-                    <h3>AI Job Application Guardian</h3>
-                    <p>A LangGraph agent pipeline that verifies job posting legitimacy, extracts requirements, and tailors a resume/cover letter using RAG over a master resume, with human approval before sending.</p>
-                    <div class="tags">
-                        <span>LangGraph</span>
-                        <span>RAG</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" target="_blank" rel="noopener">GitHub Repo</a>
-                    </div>
-                </article>
+                    <article class="project-card">
+                        <h3>Palace Booking Management System</h3>
+                        <p>A Java Swing desktop app for managing venue bookings, clients, and reports, connected to a MySQL database via JDBC.</p>
+                        <div class="tags">
+                            <span>Java</span>
+                            <span>JDBC</span>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <section class="Contact-us" id="contact">
-            <p id="Contact">Contact me</p>
-            <div class="contact-wrap">
-                <div class="information">
-                    <p>Phone no: 0328-5211647</p>
-                    <p>Email: fatimaaminfatima027@gmail.com</p>
-                    <p><a href="https://github.com/tcintern-016" target="_blank" rel="noopener">GitHub: github.com/tcintern-016</a></p>
+        <section id="internship" class="alt-bg">
+            <div class="container">
+                <p class="section-title">Internship Projects</p>
+                <p class="section-subtitle">RAG, LangChain, and LangGraph projects built during my AI Engineering internship.</p>
+                <div class="card-grid">
+                    <article class="project-card">
+                        <h3>HIKMAH AI</h3>
+                        <p>A RAG-based question-answering system over Quran and Hadith text, built with LangChain, ChromaDB, and Groq, with a FastAPI backend and Streamlit frontend.</p>
+                        <div class="tags">
+                            <span>LangChain</span>
+                            <span>RAG</span>
+                            <span>ChromaDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener">GitHub Repo</a>
+                            <a href="https://hikmah-ai-p6oz5xlbnb3ckjsf3ftpsk.streamlit.app" target="_blank" rel="noopener">Live Demo</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Mizan AI — Pakistan Law Assistant</h3>
+                        <p>A RAG assistant answering questions from Pakistani legal documents, with source citations and a legal disclaimer, built with LangChain and Groq.</p>
+                        <div class="tags">
+                            <span>LangChain</span>
+                            <span>RAG</span>
+                            <span>FastAPI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener">GitHub Repo</a>
+                            <a href="https://mizan-ai-2bdzb4nvzeabh2wgez5gtd.streamlit.app/" target="_blank" rel="noopener">Live Demo</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Content Strategist</h3>
+                        <p>A LangGraph agent that researches a business and generates a grounded content strategy — target audience, content pillars, and recommended platforms.</p>
+                        <div class="tags">
+                            <span>LangGraph</span>
+                            <span>Agents</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener">GitHub Repo</a>
+                            <a href="https://content-strategist-7cn6keutfg3z7vxcadwvgw.streamlit.app/" target="_blank" rel="noopener">Live Demo</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>ContentCompass</h3>
+                        <p>A LangGraph multi-agent app that turns a business description into a full content strategy and ready-to-post social media content.</p>
+                        <div class="tags">
+                            <span>LangGraph</span>
+                            <span>Multi-Agent</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener">GitHub Repo</a>
+                            <a href="https://contentcompass-ae9kp3zydpunlgktkq4aui.streamlit.app/" target="_blank" rel="noopener">Live Demo</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>AI Job Application Guardian</h3>
+                        <p>A LangGraph agent pipeline that verifies job posting legitimacy and tailors a resume/cover letter using RAG over a master resume, with human approval before sending.</p>
+                        <div class="tags">
+                            <span>LangGraph</span>
+                            <span>RAG</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener">GitHub Repo</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container contact-inner">
+                <div class="contact-text">
+                    <p class="section-title left">Contact Me</p>
+                    <p class="section-body left">Have a project in mind or just want to say hi? Reach out — I'd love to hear from you.</p>
+                    <div class="information">
+                        <p>Phone: 0233-4533221</p>
+                        <p>Email: fatima@gmail.com</p>
+                        <p><a href="https://github.com/tcintern-016" target="_blank" rel="noopener">github.com/tcintern-016</a></p>
+                    </div>
                 </div>
 
                 <form class="contact-form">
@@ -203,5 +218,6 @@
     <footer>
         <p>&copy; 2026 Fatima Ameen. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
