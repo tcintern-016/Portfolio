@@ -307,6 +307,7 @@ section.alt-bg {
 
 .project-links {
     display: flex;
+    justify-content: center;
     gap: 16px;
     margin-top: 16px;
     padding-top: 14px;
