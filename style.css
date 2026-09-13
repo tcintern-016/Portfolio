@@ -261,10 +261,14 @@ section.alt-bg {
     margin-top: 40px;
 }
 .card-grid-3 { grid-template-columns: repeat(3, 1fr); }
-.card-grid-4 { grid-template-columns: repeat(4, 1fr); }
+.card-grid-4 {
+    grid-template-columns: repeat(4, minmax(260px, 1fr));
+    overflow-x: auto;
+    padding-bottom: 8px;
+}
 
 @media (max-width: 1100px) {
-    .card-grid-3, .card-grid-4 {
+    .card-grid-3 {
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     }
 }
