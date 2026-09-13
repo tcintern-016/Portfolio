@@ -339,6 +339,7 @@ section.alt-bg {
     grid-template-columns: 1fr 1fr;
     gap: 60px;
     align-items: start;
+    margin-top: 40px;
 }
 .information {
     margin-top: 22px;
@@ -354,10 +355,10 @@ section.alt-bg {
     display: flex;
     flex-direction: column;
     gap: 6px;
-    background-color: white;
+    background-color: #eaf2ff;
     padding: 28px;
     border-radius: 14px;
-    border: 1px solid var(--border-soft);
+    border: 1px solid #d4e4ff;
     box-shadow: var(--shadow-sm);
 }
 .contact-form label {
@@ -426,7 +427,5 @@ footer {
     section { padding: 60px 0; }
 
     .contact-inner { grid-template-columns: 1fr; gap: 36px; }
-    .section-title.left, .section-body.left { text-align: center; }
-    .section-title.left::after { margin: 14px auto 0; }
     .information { align-items: center; text-align: center; }
 }
