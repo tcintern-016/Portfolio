@@ -9,7 +9,7 @@
     --shadow-sm: 0 3px 10px rgba(8, 8, 99, 0.06);
     --shadow-md: 0 10px 25px rgba(8, 8, 99, 0.12);
     --shadow-lg: 0 18px 40px rgba(8, 8, 99, 0.16);
-    --container-width: 1140px;
+    --container-width: 1320px;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -259,6 +259,14 @@ section.alt-bg {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 24px;
     margin-top: 40px;
+}
+.card-grid-3 { grid-template-columns: repeat(3, 1fr); }
+.card-grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+@media (max-width: 1100px) {
+    .card-grid-3, .card-grid-4 {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
 }
 .project-card {
     background-color: white;
