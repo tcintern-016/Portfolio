@@ -167,8 +167,8 @@ header {
     animation: fadeIn 1s ease both;
 }
 .header-img img {
-    height: 270px;
-    width: 270px;
+    height: 350px;
+    width: 350px;
     object-fit: cover;
     border-radius: 50%;
     border: 6px solid white;
